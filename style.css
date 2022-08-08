@@ -367,24 +367,40 @@ margin-bottom: 36px;
         margin-left: auto!important;
         margin: 1.5rem;
     }
-    .leti{
+    .leti, .riye{
         display: none;
     }
-    .riye{
-        display: none;
-    }
+
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
     .upper-container{
-        width: 100%;
+        height: auto;
+    }
+    .zuri-up img{
+    display: block;
+    padding-top: 50px;
+    margin: auto;
+    margin-bottom: 20px;
+    }
+    .upper-btn{   
         flex-direction: column;
+        margin-bottom: 50px;
     }
-    .redline-btn{
-        margin-top:24px;
-    }
-    .red-btn, .redline-btn{
+     .redline-btn{
         align-items: center;
         justify-content: center;
         justify-items: center;
     }
+    .upper-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
+@media screen and (max-width: 768px){
+     .redline-btn{
+        margin-top:24px;
+    }
+}
+
