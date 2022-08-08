@@ -143,8 +143,7 @@ margin-bottom: 36px;
 .col-right{
     position: relative;
     z-index: 1;
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
+    flex: 33.33%;
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -165,8 +164,7 @@ margin-bottom: 36px;
     margin-bottom: 48px;
 }
 .col-2{
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
+    flex: 33.33%;
     position: relative;
     width: 100%;
     padding-right: 15px;
@@ -209,8 +207,7 @@ margin-bottom: 36px;
 .col-left{
     position: relative;
     z-index: 1;
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
+    flex: 33.33%;
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -357,4 +354,37 @@ margin-bottom: 36px;
     color: #514949;
     padding-bottom: 97px;
     margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 992px){
+
+    .row{
+        flex-direction:column;
+        max-width: 100%;
+    }
+    .col-left,.col-2{
+        margin-right: auto!important;
+        margin-left: auto!important;
+        margin: 1.5rem;
+    }
+    .leti{
+        display: none;
+    }
+    .riye{
+        display: none;
+    }
+}
+@media screen and (max-width: 767px){
+    .upper-container{
+        width: 100%;
+        flex-direction: column;
+    }
+    .redline-btn{
+        margin-top:24px;
+    }
+    .red-btn, .redline-btn{
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
 }
