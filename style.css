@@ -277,7 +277,8 @@ margin-bottom: 36px;
 .footer-container{
     margin-top: 215px;
     margin-left: auto !important;
-    max-width: 1240px !important;
+    /* max-width: 1240px !important; */
+    margin-left: auto !important;
     margin-right: auto !important;
     display: block;
 }
@@ -292,7 +293,7 @@ margin-bottom: 36px;
     vertical-align: middle;
     border-style: none;
 }
-.flex-2 h3{
+.upper-footer h3{
     font-size: 16px;
     font-weight: bold;
     line-height: 24px;
@@ -309,14 +310,6 @@ margin-bottom: 36px;
     margin-top: 0;
     margin-bottom: 1rem;
 }
-.flex-3 h3{
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 24px;
-    color: #514949;
-    margin-bottom: .5rem;
-    margin-top: 0;
-}
 .flex-3 p{
     font-size: 14px;
     line-height: 20px;
@@ -329,14 +322,6 @@ margin-bottom: 36px;
     color: #E7332B;
     text-decoration: none;
     background-color: transparent;
-}
-.flex-4 h3{
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 24px;
-    color: #514949;
-    margin-bottom: .5rem;
-    margin-top: 0;
 }
 .icons a{
     color: #E7332B;
@@ -369,20 +354,21 @@ margin-bottom: 36px;
     margin-bottom: 1rem;
 }
 
-@media screen {
-    
-}
+
 @media screen and (max-width: 991px){
 
     .row{
         flex-direction:column;
         max-width: 100%;
         margin-left: 0;
+
     }
     .col-left,.col-2, .col-right{
         margin-right: auto!important;
         margin-left: auto!important;
         margin: 1.5rem;
+        padding-left: 0;
+        padding-right: 0;
     }
     .leti{
         display: none;
@@ -423,9 +409,16 @@ margin-bottom: 36px;
         justify-content: center;
         align-items: center;
     }
+    .upper-footer h3{
+    font-size: 24px;
+    margin-top: 20px;
+    }
 }
 @media screen and (max-width: 767px){
     .upper-btn br{
     display: block!important;
+    }
+    .upper-footer{
+        text-align: center;
     }
 }
